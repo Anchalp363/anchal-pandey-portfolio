@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anchal Pandey — Senior Shopify & WordPress Developer</title>
+  <meta name="description" content="Senior Shopify & WordPress Developer with 7+ years of experience building high-performance e-commerce solutions."/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ═══ LOADER ═══ -->
+<div id="loader">
+  <div class="ld-bg">
+    <div class="ld-orb ld-o1"></div>
+    <div class="ld-orb ld-o2"></div>
+  </div>
+  <div class="ld-body">
+    <!-- Logo mark -->
+    <div class="ld-logo-ring">
+      <svg class="ld-spin-svg" viewBox="0 0 120 120">
+        <defs>
+          <linearGradient id="ld-g" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#3B82F6"/>
+            <stop offset="100%" stop-color="#06B6D4"/>
+          </linearGradient>
+        </defs>
+        <circle cx="60" cy="60" r="54" fill="none" stroke="rgba(59,130,246,.08)" stroke-width="2"/>
+        <circle cx="60" cy="60" r="54" fill="none" stroke="url(#ld-g)" stroke-width="2"
+          stroke-linecap="round" stroke-dasharray="339" stroke-dashoffset="339" id="ldArc"/>
+      </svg>
+      <div class="ld-logo-inner">
+        <img src="hero_img.png" alt="" class="ld-face"/>
+      </div>
+    </div>
+
+    <!-- Name -->
+    <div class="ld-info">
+      <h1 class="ld-name">Anchal Pandey</h1>
+      <p class="ld-role">Senior Shopify &amp; WordPress Developer</p>
+    </div>
+
+    <!-- Animated platform pills -->
+    <div class="ld-pills">
+      <span class="ld-pill lp1">Shopify</span>
+      <span class="ld-pill lp2">WordPress</span>
+      <span class="ld-pill lp3">WooCommerce</span>
+      <span class="ld-pill lp4">Webflow</span>
+      <span class="ld-pill lp5">Squarespace</span>
+      <span class="ld-pill lp6">Wix</span>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="ld-bar-wrap">
+      <div class="ld-bar" id="ldBar"></div>
+    </div>
+    <p class="ld-pct" id="ldPct">0%</p>
+  </div>
+</div>
+
+<!-- ═══ CURSOR ═══ -->
+<div class="cursor" id="cursor"></div>
+
+<!-- ═══ NAVIGATION ═══ -->
+<header id="nav">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">AP<span class="logo-dot">.</span></a>
+    <nav class="nav-links">
+      <a href="#about"      class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects"   class="nav-link">Projects</a>
+      <a href="#skills"     class="nav-link">Skills</a>
+      <a href="#contact"    class="nav-link">Contact</a>
+    </nav>
+    <a href="Anchal_Pandey_Resume.pdf" target="_blank" rel="noopener" class="nav-btn">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Resume
+    </a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mob-close" id="mobClose">✕</button>
+  <nav class="mob-nav">
+    <a href="#about"      class="mob-link">About</a>
+    <a href="#experience" class="mob-link">Experience</a>
+    <a href="#projects"   class="mob-link">Projects</a>
+    <a href="#skills"     class="mob-link">Skills</a>
+    <a href="#contact"    class="mob-link">Contact</a>
+    <a href="Anchal_Pandey_Resume.pdf" target="_blank" rel="noopener" class="mob-resume">Download Resume ↓</a>
+  </nav>
+</div>
+
+<!-- ═══════════════════════════════
+     HERO
+═══════════════════════════════ -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <div class="hbg-gradient"></div>
+    <canvas id="particleCanvas"></canvas>
+    <div class="hbg-grid"></div>
+  </div>
+
+  <div class="container hero-layout">
+    <!-- LEFT -->
+    <div class="hero-text">
+      <div class="hero-eyebrow reveal">
+        <span class="eyebrow-dot"></span>
+        Available for New Projects
+      </div>
+
+      <h1 class="hero-h1 reveal rd1">
+        Senior Shopify<br>
+        <span class="gradient-text">&amp; WordPress</span><br>
+        Developer
+      </h1>
+
+      <p class="hero-desc reveal rd2">
+        7+ years crafting high-performance e-commerce storefronts, custom Shopify themes, and WordPress solutions for global brands. Specializing in Liquid, API integrations, and conversion optimization.
+      </p>
+
+      <!-- Tech stack chips — clickable, filter + scroll to projects -->
+      <div class="tech-row reveal rd3" id="heroTechRow">
+        <a class="tech-chip" data-filter="shopify"     href="#projects">Shopify</a>
+        <a class="tech-chip" data-filter="wordpress"   href="#projects">WordPress</a>
+        <a class="tech-chip" data-filter="woocommerce" href="#projects">WooCommerce</a>
+        <a class="tech-chip" data-filter="webflow"     href="#projects">Webflow</a>
+        <a class="tech-chip" data-filter="liquid"      href="#projects">Liquid</a>
+        <a class="tech-chip" data-filter="api"         href="#projects">API</a>
+        <a class="tech-chip" data-filter="gempages"    href="#projects">GemPages</a>
+        <a class="tech-chip" data-filter="replo"       href="#projects">Replo</a>
+        <a class="tech-chip" data-filter="pagefly"     href="#projects">PageFly</a>
+      </div>
+
+      <!-- CTAs -->
+      <div class="hero-ctas reveal rd4">
+        <a href="#projects" class="btn-primary">
+          View Projects
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="Anchal_Pandey_Resume.pdf" target="_blank" rel="noopener" class="btn-secondary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT — Hero Image -->
+    <div class="hero-image reveal-right">
+      <div class="hero-img-wrap">
+        <div class="hero-img-glow"></div>
+        <img src="hero_img.png" alt="Anchal Pandey" class="hero-img" loading="eager"/>
+        <div class="float-badge fb-1">
+          <span class="fb-icon">🛒</span>
+          <span class="fb-text">Shopify Expert</span>
+        </div>
+        <div class="float-badge fb-2">
+          <span class="fb-icon">🌐</span>
+          <span class="fb-text">WordPress Pro</span>
+        </div>
+        <div class="float-badge fb-3">
+          <span class="fb-icon">⚡</span>
+          <span class="fb-text">Performance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     METRICS
+═══════════════════════════════ -->
+<section class="metrics-bar">
+  <div class="container metrics-grid">
+    <div class="metric reveal">
+      <span class="metric-num" data-count="7">0</span>
+      <span class="metric-plus">+</span>
+      <span class="metric-label">Years Experience</span>
+    </div>
+    <div class="metric-divider"></div>
+    <div class="metric reveal rd1">
+      <span class="metric-num" data-count="150">0</span>
+      <span class="metric-plus">+</span>
+      <span class="metric-label">Projects Delivered</span>
+    </div>
+    <div class="metric-divider"></div>
+    <div class="metric reveal rd2">
+      <span class="metric-num" data-count="3">0</span>
+      <span class="metric-plus">+</span>
+      <span class="metric-label">Industries Served</span>
+    </div>
+    <div class="metric-divider"></div>
+    <div class="metric reveal rd3">
+      <span class="metric-num" data-count="100">0</span>
+      <span class="metric-plus">%</span>
+      <span class="metric-label">Client Satisfaction</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     ABOUT
+═══════════════════════════════ -->
+<section id="about" class="section about-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">About Me</span>
+      <h2 class="section-title">Turning ideas into <span class="gradient-text">digital reality</span></h2>
+    </div>
+
+    <div class="about-layout">
+      <div class="about-left reveal">
+        <p class="about-text">
+          I'm a dynamic and highly skilled Web Developer with over <strong>7 years of experience</strong> designing, developing, and optimizing websites across diverse industries. Proficient in Shopify, WordPress, WooCommerce, and Webflow.
+        </p>
+        <p class="about-text">
+          My expertise spans custom Shopify Liquid theme development, performance optimization, seamless third-party API integrations, and comprehensive SEO strategies — delivering measurable results for brands worldwide.
+        </p>
+
+        <div class="edu-list">
+          <div class="edu-item">
+            <span class="edu-icon">🎓</span>
+            <div>
+              <p class="edu-title">Master's in MCA</p>
+              <p class="edu-sub">St. Xavier's College · 2015–2017</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <span class="edu-icon">🎓</span>
+            <div>
+              <p class="edu-title">Bachelor's in BCA</p>
+              <p class="edu-sub">Uka Tarsadia University · 2012–2015</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-ctas">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact"  class="btn-ghost">Get In Touch</a>
+        </div>
+      </div>
+
+      <div class="about-cards reveal-right">
+        <div class="feat-card">
+          <div class="feat-icon">🛒</div>
+          <h3>Shopify Expert</h3>
+          <p>Custom Liquid themes, Shopify Plus, app integrations, headless builds, and store migrations.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🌐</div>
+          <h3>WordPress Pro</h3>
+          <p>WooCommerce, custom plugins, Gutenberg blocks, REST API, and multi-site management.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🚀</div>
+          <h3>Performance Optimization</h3>
+          <p>90+ PageSpeed scores, Core Web Vitals, CDN setup, responsive design, and A/B testing.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🔗</div>
+          <h3>API Integrations</h3>
+          <p>Payment gateways, CRM systems, shipping providers, social APIs, and custom integrations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     EXPERIENCE
+═══════════════════════════════ -->
+<section id="experience" class="section exp-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Work History</span>
+      <h2 class="section-title">Career <span class="gradient-text">Timeline</span></h2>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-left">
+          <div class="tl-dot"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-meta">
+            <span class="tl-period">2017 — 2019</span>
+            <span class="tl-badge">Homemade Merch</span>
+          </div>
+          <h3 class="tl-role">Junior Web Developer</h3>
+          <ul class="tl-list">
+            <li>Designed and maintained custom Shopify and WordPress themes and plugins.</li>
+            <li>Implemented tailored coding solutions ensuring seamless functionality and performance.</li>
+            <li>Collaborated with clients to optimize website performance and security.</li>
+            <li>Provided technical support and enhanced site capabilities continuously.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left">
+          <div class="tl-dot"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-meta">
+            <span class="tl-period">2019 — 2022</span>
+            <span class="tl-badge">Bloom Better</span>
+          </div>
+          <h3 class="tl-role">Senior Web Developer</h3>
+          <ul class="tl-list">
+            <li>Spearheaded development of highly customized Shopify themes and apps.</li>
+            <li>Implemented seamless integrations of third-party tools, APIs, and applications.</li>
+            <li>Improved mobile responsiveness and site speed, boosting conversions significantly.</li>
+            <li>Mentored junior developers and delivered projects on schedule and within budget.</li>
+          </ul>
+          <div class="tl-projects">
+            <span class="tl-proj-label">Notable projects:</span>
+            <a href="https://www.innosupps.com/" target="_blank" class="tl-proj-link">innosupps.com</a>
+            <a href="https://blissy.com/" target="_blank" class="tl-proj-link">blissy.com</a>
+            <a href="https://boombeauty.com/" target="_blank" class="tl-proj-link">boombeauty.com</a>
+            <a href="https://mokobara.com/" target="_blank" class="tl-proj-link">mokobara.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item tl-current reveal">
+        <div class="tl-left">
+          <div class="tl-dot tl-dot-active"></div>
+        </div>
+        <div class="tl-card tl-card-active">
+          <div class="tl-meta">
+            <span class="tl-period">2019 — Present</span>
+            <span class="tl-badge tl-badge-active">HM Global · Current</span>
+          </div>
+          <h3 class="tl-role">Senior Web Developer</h3>
+          <ul class="tl-list">
+            <li>Designed and implemented custom Shopify and WordPress themes aligned with client objectives.</li>
+            <li>Optimized websites for performance, security, and SEO — driving measurable traffic growth.</li>
+            <li>Developed custom Shopify apps for inventory, payment gateways, and third-party APIs.</li>
+            <li>Migrated websites between platforms with minimal downtime and complete data integrity.</li>
+            <li>Mentored junior team members, streamlining workflows for faster delivery.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     PROJECTS
+═══════════════════════════════ -->
+<section id="projects" class="section projects-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Selected Work</span>
+      <h2 class="section-title">Recent <span class="gradient-text">Projects</span></h2>
+      <p class="section-sub">Live websites built from the resume — each tab shows only that platform's projects.</p>
+    </div>
+
+    <!-- Project Tabs -->
+    <div class="proj-tabs reveal" id="projTabs">
+      <button class="proj-tab active" data-tab="shopify">🛒 Shopify</button>
+      <button class="proj-tab" data-tab="wordpress">🌐 WordPress</button>
+      <button class="proj-tab" data-tab="woocommerce">🛍 WooCommerce</button>
+      <button class="proj-tab" data-tab="webflow">💠 Webflow</button>
+      <button class="proj-tab" data-tab="squarespace">⬛ Squarespace</button>
+      <button class="proj-tab" data-tab="wix">🔲 Wix</button>
+      <button class="proj-tab" data-tab="gempages">✨ GemPages / Replo</button>
+    </div>
+
+    <!-- Empty state -->
+    <div class="proj-empty" id="projEmpty" style="display:none;">
+      <div class="proj-empty-icon">🔍</div>
+      <p>No projects found for this category.</p>
+      <button class="proj-empty-reset" id="projEmptyReset">Show All Projects</button>
+    </div>
+    <!-- ══ SHOPIFY ══ -->
+    <div class="proj-panel active" id="panel-shopify">
+      <div class="proj-grid">
+        <div class="proj-card reveal" data-category="shopify">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&q=80&fit=crop" alt="Meroda Cosmetics" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform shopify-tag">Shopify</span>
+              <a href="https://merodacosmetics.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">01</span>
+          </div>
+          <div class="proj-info">
+            <h4>Meroda Cosmetics</h4>
+            <p>Premium beauty e-commerce with custom product configurator, subscription features, and Klaviyo flows.</p>
+            <div class="proj-tags"><span>Shopify</span><span>Liquid</span><span>Klaviyo</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd1" data-category="shopify">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&q=80&fit=crop" alt="Joanna Dahdah" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform shopify-tag">Shopify Plus</span>
+              <a href="https://joannadahdah.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">02</span>
+          </div>
+          <div class="proj-info">
+            <h4>Joanna Dahdah</h4>
+            <p>Luxury fashion boutique with editorial product pages, multi-currency support, and Shopify Plus features.</p>
+            <div class="proj-tags"><span>Shopify Plus</span><span>Multi-currency</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd2" data-category="shopify">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=600&q=80&fit=crop" alt="Kith" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform shopify-tag">Shopify Plus</span>
+              <a href="https://kith.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">03</span>
+          </div>
+          <div class="proj-info">
+            <h4>Kith</h4>
+            <p>High-traffic streetwear brand with custom drop system, waitlist functionality, and complex inventory management.</p>
+            <div class="proj-tags"><span>Shopify Plus</span><span>Headless</span><span>Custom App</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd3" data-category="shopify">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80&fit=crop" alt="IM8 Health" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform shopify-tag">Shopify</span>
+              <a href="https://im8health.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">04</span>
+          </div>
+          <div class="proj-info">
+            <h4>IM8 Health</h4>
+            <p>Health supplement store with ReCharge subscriptions, quiz-based product recommendations, and bundle builder.</p>
+            <div class="proj-tags"><span>Shopify</span><span>ReCharge</span><span>Quiz Funnel</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd4" data-category="shopify">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=600&q=80&fit=crop" alt="Aupale Vodka" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform shopify-tag">Shopify</span>
+              <a href="https://www.aupalevodka.com/en/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">05</span>
+          </div>
+          <div class="proj-info">
+            <h4>Aupale Vodka</h4>
+            <p>Premium spirits brand with custom Shopify theme, age verification gate, and international shipping setup.</p>
+            <div class="proj-tags"><span>Shopify</span><span>Age Gate</span><span>Liquid</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal" data-category="shopify">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=600&q=80&fit=crop" alt="American White Label CBD" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform shopify-tag">Shopify</span>
+              <a href="https://americanwhitelabelcbd.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">06</span>
+          </div>
+          <div class="proj-info">
+            <h4>American White Label CBD</h4>
+            <p>CBD brand with custom Shopify store, lab results integration, and wholesale ordering portal.</p>
+            <div class="proj-tags"><span>Shopify</span><span>Wholesale</span><span>API</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd1" data-category="shopify">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&q=80&fit=crop" alt="Boom Beauty" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform shopify-tag">Shopify</span>
+              <a href="https://boombeauty.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">07</span>
+          </div>
+          <div class="proj-info">
+            <h4>Boom Beauty</h4>
+            <p>Anti-aging beauty brand with custom educational sections, upsell flows, and loyalty programme integrations.</p>
+            <div class="proj-tags"><span>Shopify</span><span>Upsell</span><span>Loyalty</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd2" data-category="shopify">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1553531384-cc64ac80f931?w=600&q=80&fit=crop" alt="Mokobara" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform shopify-tag">Shopify</span>
+              <a href="https://mokobara.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">08</span>
+          </div>
+          <div class="proj-info">
+            <h4>Mokobara</h4>
+            <p>Premium luggage brand with 3D product previews, colour configurator, and international shipping integrations.</p>
+            <div class="proj-tags"><span>Shopify</span><span>3D Viewer</span><span>Configurator</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ══ WORDPRESS ══ -->
+    <div class="proj-panel" id="panel-wordpress">
+      <div class="proj-grid">
+        <div class="proj-card reveal" data-category="wordpress">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80&fit=crop" alt="Correct Toes" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wp-tag">WordPress</span>
+              <a href="https://correcttoes.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">01</span>
+          </div>
+          <div class="proj-info">
+            <h4>Correct Toes</h4>
+            <p>Podiatrist-recommended foot care with WooCommerce store and custom product configurator.</p>
+            <div class="proj-tags"><span>WordPress</span><span>WooCommerce</span><span>PHP</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd1" data-category="wordpress">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80&fit=crop" alt="Hapi Homes" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wp-tag">WordPress</span>
+              <a href="https://hapihomes.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">02</span>
+          </div>
+          <div class="proj-info">
+            <h4>Hapi Homes</h4>
+            <p>Real estate platform with IDX integration, advanced property search, and mortgage calculator.</p>
+            <div class="proj-tags"><span>WordPress</span><span>IDX</span><span>Elementor</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd2" data-category="wordpress">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80&fit=crop" alt="Blaze Body Mealplanner" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wp-tag">WordPress</span>
+              <a href="https://blazebodymealplanner.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">03</span>
+          </div>
+          <div class="proj-info">
+            <h4>Blaze Body Mealplanner</h4>
+            <p>Nutrition platform with macro tracking dashboards, personalised weekly plans, and custom plugin.</p>
+            <div class="proj-tags"><span>WordPress</span><span>Custom Plugin</span><span>REST API</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd3" data-category="wordpress">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=80&fit=crop" alt="Butterfly Social" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wp-tag">WordPress</span>
+              <a href="https://butterflysocial.co/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">04</span>
+          </div>
+          <div class="proj-info">
+            <h4>Butterfly Social</h4>
+            <p>Social network combining human and AI interactions with custom membership tiers and moderation system.</p>
+            <div class="proj-tags"><span>WordPress</span><span>BuddyPress</span><span>AI</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ══ WOOCOMMERCE ══ -->
+    <div class="proj-panel" id="panel-woocommerce">
+      <div class="proj-grid">
+        <div class="proj-card reveal" data-category="woocommerce">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80&fit=crop" alt="Italic" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wc-tag">WooCommerce</span>
+              <a href="https://italic.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">01</span>
+          </div>
+          <div class="proj-info">
+            <h4>Italic</h4>
+            <p>Luxury goods membership platform with custom WooCommerce tiered pricing and gated product access.</p>
+            <div class="proj-tags"><span>WooCommerce</span><span>Membership</span><span>PHP</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd1" data-category="woocommerce">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80&fit=crop" alt="Diesel Farm (IT)" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wc-tag">WooCommerce</span>
+              <a href="https://dieselfarm.com/it/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">02</span>
+          </div>
+          <div class="proj-info">
+            <h4>Diesel Farm (IT)</h4>
+            <p>Italian fashion brand — multilingual WooCommerce store with size guide and international shipping.</p>
+            <div class="proj-tags"><span>WooCommerce</span><span>Multilingual</span><span>i18n</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd2" data-category="woocommerce">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1505022610485-0249ba5b3675?w=600&q=80&fit=crop" alt="MR PORTER" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wc-tag">WooCommerce</span>
+              <a href="https://www.mrporter.com/en-us/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">03</span>
+          </div>
+          <div class="proj-info">
+            <h4>MR PORTER</h4>
+            <p>Global luxury menswear — advanced WooCommerce catalogue with editorial content and international checkout.</p>
+            <div class="proj-tags"><span>WooCommerce</span><span>Luxury</span><span>International</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd3" data-category="woocommerce">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1542601906897-ecd95ab7dbc0?w=600&q=80&fit=crop" alt="Buffy" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wc-tag">WooCommerce</span>
+              <a href="https://buffy.co/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">04</span>
+          </div>
+          <div class="proj-info">
+            <h4>Buffy</h4>
+            <p>Sustainable bedding brand — eco-friendly positioning, free trial programme, and custom checkout flow.</p>
+            <div class="proj-tags"><span>WooCommerce</span><span>Sustainability</span><span>Trial</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd4" data-category="woocommerce">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80&fit=crop" alt="Bombas" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wc-tag">WooCommerce</span>
+              <a href="https://bombas.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">05</span>
+          </div>
+          <div class="proj-info">
+            <h4>Bombas</h4>
+            <p>Apparel brand with bundle customization, subscription model, and buy-one-give-one impact tracking.</p>
+            <div class="proj-tags"><span>WooCommerce</span><span>Subscriptions</span><span>Bundles</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal" data-category="woocommerce">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&q=80&fit=crop" alt="Snarky Tea" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wc-tag">WooCommerce</span>
+              <a href="https://www.snarkytea.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">06</span>
+          </div>
+          <div class="proj-info">
+            <h4>Snarky Tea</h4>
+            <p>Witty tea brand with subscription boxes, custom flavour selector, and WooCommerce loyalty rewards.</p>
+            <div class="proj-tags"><span>WooCommerce</span><span>Subscriptions</span><span>Loyalty</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd1" data-category="woocommerce">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&q=80&fit=crop" alt="Moroccanoil" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wc-tag">WooCommerce</span>
+              <a href="https://www.moroccanoil.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">07</span>
+          </div>
+          <div class="proj-info">
+            <h4>Moroccanoil</h4>
+            <p>Premium hair care brand — international WooCommerce store with advanced filtering and loyalty points.</p>
+            <div class="proj-tags"><span>WooCommerce</span><span>i18n</span><span>Loyalty</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ══ WEBFLOW ══ -->
+    <div class="proj-panel" id="panel-webflow">
+      <div class="proj-grid">
+        <div class="proj-card reveal" data-category="webflow">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80&fit=crop" alt="Plastic Bionic" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wf-tag">Webflow</span>
+              <a href="https://plasticbionic.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">01</span>
+          </div>
+          <div class="proj-info">
+            <h4>Plastic Bionic</h4>
+            <p>Tech startup with interactive animations, scroll-triggered effects, and dynamic CMS-powered case studies.</p>
+            <div class="proj-tags"><span>Webflow</span><span>CMS</span><span>Interactions</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd1" data-category="webflow">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=80&fit=crop" alt="Design Make Connect" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wf-tag">Webflow</span>
+              <a href="https://www.designmakeconnect.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">02</span>
+          </div>
+          <div class="proj-info">
+            <h4>Design Make Connect</h4>
+            <p>Creative agency with dynamic team profiles, project portfolio CMS, and motion-heavy landing pages.</p>
+            <div class="proj-tags"><span>Webflow</span><span>CMS</span><span>Motion</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd2" data-category="webflow">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&q=80&fit=crop" alt="Trivie" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wf-tag">Webflow</span>
+              <a href="https://www.trivie.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">03</span>
+          </div>
+          <div class="proj-info">
+            <h4>Trivie</h4>
+            <p>AI learning platform with feature demos, interactive explainers, smart CMS blog, and lead capture.</p>
+            <div class="proj-tags"><span>Webflow</span><span>AI SaaS</span><span>Blog CMS</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd3" data-category="webflow">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80&fit=crop" alt="Join Colab" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wf-tag">Webflow</span>
+              <a href="https://www.joincolab.io/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">04</span>
+          </div>
+          <div class="proj-info">
+            <h4>Join Colab</h4>
+            <p>Collaboration platform with animated hero, dynamic pricing tables, CMS case studies, and HubSpot forms.</p>
+            <div class="proj-tags"><span>Webflow</span><span>HubSpot</span><span>Animations</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ══ SQUARESPACE ══ -->
+    <div class="proj-panel" id="panel-squarespace">
+      <div class="proj-grid">
+        <div class="proj-card reveal" data-category="squarespace">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=600&q=80&fit=crop" alt="Casita HK" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform sq-tag">Squarespace</span>
+              <a href="https://www.casita.com.hk/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">01</span>
+          </div>
+          <div class="proj-info">
+            <h4>Casita HK</h4>
+            <p>Hong Kong lifestyle brand with custom Squarespace template, multilingual gallery, and appointment booking.</p>
+            <div class="proj-tags"><span>Squarespace</span><span>Multilingual</span><span>Booking</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd1" data-category="squarespace">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80&fit=crop" alt="Compton Girls Club" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform sq-tag">Squarespace</span>
+              <a href="https://comptongirls.club/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">02</span>
+          </div>
+          <div class="proj-info">
+            <h4>Compton Girls Club</h4>
+            <p>Non-profit community platform with event management, donation system, and membership sign-up.</p>
+            <div class="proj-tags"><span>Squarespace</span><span>Donations</span><span>Events</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd2" data-category="squarespace">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=600&q=80&fit=crop" alt="Eunice Beck Photography" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform sq-tag">Squarespace</span>
+              <a href="https://www.eunicebeckphoto.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">03</span>
+          </div>
+          <div class="proj-info">
+            <h4>Eunice Beck Photography</h4>
+            <p>Photography portfolio with custom gallery layouts, client proofing pages, and integrated booking.</p>
+            <div class="proj-tags"><span>Squarespace</span><span>Portfolio</span><span>Booking</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ══ WIX ══ -->
+    <div class="proj-panel" id="panel-wix">
+      <div class="proj-grid">
+        <div class="proj-card reveal" data-category="wix">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80&fit=crop" alt="Vum Store" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wx-tag">Wix</span>
+              <a href="https://www.vumstore.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">01</span>
+          </div>
+          <div class="proj-info">
+            <h4>Vum Store</h4>
+            <p>E-commerce store with custom Wix template, advanced product filtering, and integrated payment solutions.</p>
+            <div class="proj-tags"><span>Wix</span><span>E-commerce</span><span>Custom CSS</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd1" data-category="wix">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&q=80&fit=crop" alt="Perinatal Potpourri" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wx-tag">Wix</span>
+              <a href="https://www.perinatalpotpourri.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">02</span>
+          </div>
+          <div class="proj-info">
+            <h4>Perinatal Potpourri</h4>
+            <p>Healthcare resource platform with blog, appointment booking, resource library, and newsletter integration.</p>
+            <div class="proj-tags"><span>Wix</span><span>Blog</span><span>Booking</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd2" data-category="wix">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=600&q=80&fit=crop" alt="Jones YQ" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wx-tag">Wix</span>
+              <a href="https://www.jonesyq.com/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">03</span>
+          </div>
+          <div class="proj-info">
+            <h4>Jones YQ</h4>
+            <p>Personal brand with custom animations, portfolio showcase, blog CMS, and social media integrations.</p>
+            <div class="proj-tags"><span>Wix</span><span>Portfolio</span><span>Blog</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd3" data-category="wix">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&q=80&fit=crop" alt="Easy Enterprise" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform wx-tag">Wix</span>
+              <a href="https://www.easyenterprise.in/" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">04</span>
+          </div>
+          <div class="proj-info">
+            <h4>Easy Enterprise</h4>
+            <p>Business services site with service showcase, client inquiry forms, testimonials, and Maps integration.</p>
+            <div class="proj-tags"><span>Wix</span><span>Business</span><span>Maps</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ══ GEMPAGES ══ -->
+    <div class="proj-panel" id="panel-gempages">
+      <div class="proj-grid">
+        <div class="proj-card reveal" data-category="gempages">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80&fit=crop" alt="Terra Grounding" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform gp-tag">GemPages</span>
+              <a href="https://terragrounding.co/products/the-ultimate-inflammation-relief-bundle" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">01</span>
+          </div>
+          <div class="proj-info">
+            <h4>Terra Grounding</h4>
+            <p>High-converting product page with urgency timers, review layout, and social proof sections.</p>
+            <div class="proj-tags"><span>GemPages</span><span>CRO</span><span>Social Proof</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd1" data-category="gempages">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&q=80&fit=crop" alt="The Love Blanket" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform gp-tag">GemPages</span>
+              <a href="https://theloveblanket.co/products/the-love-blanket-waterproof-intimacy-blanket?variant=42877454254245" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">02</span>
+          </div>
+          <div class="proj-info">
+            <h4>The Love Blanket</h4>
+            <p>Intimacy product page with testimonial carousel, FAQ accordion, trust badges, and lifestyle imagery.</p>
+            <div class="proj-tags"><span>GemPages</span><span>Testimonials</span><span>Conversion</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd2" data-category="gempages">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80&fit=crop" alt="Luyors LED Therapy Mask" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform gp-tag">GemPages</span>
+              <a href="https://luyors.com/products/equinox-pro-led-therapy-face-neck-chest-mask" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">03</span>
+          </div>
+          <div class="proj-info">
+            <h4>Luyors LED Therapy Mask</h4>
+            <p>Beauty tech product with before/after sliders, clinical study highlights, and feature comparison chart.</p>
+            <div class="proj-tags"><span>GemPages</span><span>Before/After</span><span>Comparison</span></div>
+          </div>
+        </div>
+        <div class="proj-card reveal rd3" data-category="gempages">
+          <div class="proj-img">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80&fit=crop" alt="Rose Skin Co — IPL Handset" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80&fit=crop'"/>
+            <div class="proj-hover">
+              <span class="proj-platform gp-tag">GemPages</span>
+              <a href="https://roseskinco.com/products/lumi-ipl-hair-removal-handset" target="_blank" rel="noopener" class="proj-cta">View Live ↗</a>
+            </div>
+            <span class="proj-num">04</span>
+          </div>
+          <div class="proj-info">
+            <h4>Rose Skin Co — IPL Handset</h4>
+            <p>Best-selling hair removal device with video hero, treatment schedule infographic, and review aggregation.</p>
+            <div class="proj-tags"><span>GemPages</span><span>Video Hero</span><span>Reviews</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ═══════════════════════════════
+     SKILLS
+═══════════════════════════════ -->
+<section id="skills" class="section skills-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Expertise</span>
+      <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+    </div>
+
+    <div class="skills-layout">
+      <div class="skill-group reveal">
+        <h3 class="skill-group-title">Platforms &amp; CMS</h3>
+        <div class="skill-bars">
+          <div class="skill-bar-item"><div class="sb-header"><span class="sb-name"><span class="sb-emoji">🛒</span>Shopify / Plus</span><span class="sb-pct">95%</span></div><div class="sb-track"><div class="sb-fill" data-w="95"></div></div></div>
+          <div class="skill-bar-item"><div class="sb-header"><span class="sb-name"><span class="sb-emoji">🌐</span>WordPress</span><span class="sb-pct">93%</span></div><div class="sb-track"><div class="sb-fill" data-w="93"></div></div></div>
+          <div class="skill-bar-item"><div class="sb-header"><span class="sb-name"><span class="sb-emoji">🛍</span>WooCommerce</span><span class="sb-pct">91%</span></div><div class="sb-track"><div class="sb-fill" data-w="91"></div></div></div>
+          <div class="skill-bar-item"><div class="sb-header"><span class="sb-name"><span class="sb-emoji">💠</span>Webflow</span><span class="sb-pct">84%</span></div><div class="sb-track"><div class="sb-fill" data-w="84"></div></div></div>
+          <div class="skill-bar-item"><div class="sb-header"><span class="sb-name"><span class="sb-emoji">🔲</span>Squarespace / Wix</span><span class="sb-pct">80%</span></div><div class="sb-track"><div class="sb-fill" data-w="80"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal rd1">
+        <h3 class="skill-group-title">Languages</h3>
+        <div class="skill-bars">
+          <div class="skill-bar-item"><div class="sb-header"><span class="sb-name"><span class="sb-emoji">📄</span>HTML5 &amp; CSS3</span><span class="sb-pct">97%</span></div><div class="sb-track"><div class="sb-fill" data-w="97"></div></div></div>
+          <div class="skill-bar-item"><div class="sb-header"><span class="sb-name"><span class="sb-emoji">💧</span>Liquid (Shopify)</span><span class="sb-pct">94%</span></div><div class="sb-track"><div class="sb-fill" data-w="94"></div></div></div>
+          <div class="skill-bar-item"><div class="sb-header"><span class="sb-name"><span class="sb-emoji">🟡</span>JavaScript</span><span class="sb-pct">88%</span></div><div class="sb-track"><div class="sb-fill" data-w="88"></div></div></div>
+          <div class="skill-bar-item"><div class="sb-header"><span class="sb-name"><span class="sb-emoji">🐘</span>PHP</span><span class="sb-pct">86%</span></div><div class="sb-track"><div class="sb-fill" data-w="86"></div></div></div>
+          <div class="skill-bar-item"><div class="sb-header"><span class="sb-name"><span class="sb-emoji">🌬</span>Tailwind CSS</span><span class="sb-pct">89%</span></div><div class="sb-track"><div class="sb-fill" data-w="89"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal rd2">
+        <h3 class="skill-group-title">Tools &amp; Expertise</h3>
+        <div class="skill-bars">
+          <div class="skill-bar-item"><div class="sb-header"><span class="sb-name"><span class="sb-emoji">📈</span>SEO &amp; Analytics</span><span class="sb-pct">92%</span></div><div class="sb-track"><div class="sb-fill" data-w="92"></div></div></div>
+          <div class="skill-bar-item"><div class="sb-header"><span class="sb-name"><span class="sb-emoji">🔗</span>API Integrations</span><span class="sb-pct">90%</span></div><div class="sb-track"><div class="sb-fill" data-w="90"></div></div></div>
+          <div class="skill-bar-item"><div class="sb-header"><span class="sb-name"><span class="sb-emoji">⚡</span>Performance Opt.</span><span class="sb-pct">93%</span></div><div class="sb-track"><div class="sb-fill" data-w="93"></div></div></div>
+          <div class="skill-bar-item"><div class="sb-header"><span class="sb-name"><span class="sb-emoji">🎨</span>Figma / Design</span><span class="sb-pct">82%</span></div><div class="sb-track"><div class="sb-fill" data-w="82"></div></div></div>
+          <div class="skill-bar-item"><div class="sb-header"><span class="sb-name"><span class="sb-emoji">🔀</span>Git &amp; GitHub</span><span class="sb-pct">87%</span></div><div class="sb-track"><div class="sb-fill" data-w="87"></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tech-cloud reveal">
+      <span>Shopify Liquid</span><span>Shopify Plus</span><span>WordPress REST API</span>
+      <span>WooCommerce</span><span>GemPages</span><span>Replo</span><span>PageFly</span>
+      <span>Klaviyo</span><span>ReCharge</span><span>Yotpo</span>
+      <span>Google Analytics 4</span><span>SEMrush</span><span>Ahrefs</span>
+      <span>Tailwind CSS</span><span>Bootstrap</span><span>jQuery</span><span>Git</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     CONTACT
+═══════════════════════════════ -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <div class="contact-left reveal">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="contact-headline">
+          Let's Build Something<br>
+          <span class="gradient-text">Amazing Together</span>
+        </h2>
+        <p class="contact-desc">
+          Available for freelance projects, long-term contracts, and collaborations. Whether you need a Shopify store built from scratch or a WordPress site optimized for performance — let's talk.
+        </p>
+
+        <div class="avail-status">
+          <span class="avail-led"></span>
+          <span>Open to new projects</span>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:anchalp4363@gmail.com" class="contact-link">
+            <div class="cl-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="cl-body">
+              <span class="cl-label">Email</span>
+              <span class="cl-value">anchalp4363@gmail.com</span>
+            </div>
+            <svg class="cl-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+
+          <a href="Anchal_Pandey_Resume.pdf" target="_blank" rel="noopener" class="contact-link">
+            <div class="cl-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+            </div>
+            <div class="cl-body">
+              <span class="cl-label">Resume</span>
+              <span class="cl-value">Download PDF</span>
+            </div>
+            <svg class="cl-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-right reveal-right">
+        <div class="contact-card">
+          <div class="cc-header">
+            <h3>Send a Message</h3>
+            <p>I typically respond within 24 hours.</p>
+          </div>
+
+          <button class="btn-zoom-big" id="openZoom" type="button">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 10l4.553-2.069A1 1 0 0 1 21 8.82v6.36a1 1 0 0 1-1.447.889L15 14M3 8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8z"/></svg>
+            Book a Free Zoom Call
+          </button>
+
+          <div class="cc-divider"><span>or send a quick message</span></div>
+
+          <!-- Task 5: Properly working email button -->
+          <a href="mailto:anchalp4363@gmail.com?subject=Project%20Enquiry&body=Hi%20Anchal%2C%0A%0AI'd%20like%20to%20discuss%20a%20project%20with%20you." class="btn-email-big" id="emailDirectBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email Me Directly
+          </a>
+
+          <div class="cc-meta">
+            <div class="cc-meta-row">
+              <span class="cc-meta-label">Response time</span>
+              <span class="cc-meta-val">Within 24 hours</span>
+            </div>
+            <div class="cc-meta-row">
+              <span class="cc-meta-label">Availability</span>
+              <span class="cc-meta-val cc-green">Open to work ✓</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <p class="footer-logo">AP<span class="logo-dot">.</span></p>
+      <p class="footer-tagline">Senior Shopify &amp; WordPress Developer</p>
+    </div>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="footer-copy">© 2025 Anchal Pandey. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ═══ ZOOM MODAL ═══ -->
+<div class="zoom-overlay" id="zoomOverlay" aria-hidden="true">
+  <div class="zoom-modal">
+    <button class="zoom-close" id="zoomClose">✕</button>
+    <div class="zoom-icon">📹</div>
+    <h2 class="zoom-title">Book a Zoom Call</h2>
+    <p class="zoom-sub">30-min free discovery call · Fill in details and Anchal will send the Zoom link.</p>
+    <div class="zoom-form" id="zoomForm">
+      <div class="zf-row">
+        <div class="zf-group"><label>Name *</label><input type="text" id="zName" placeholder="Your name" autocomplete="name"/></div>
+        <div class="zf-group"><label>Email *</label><input type="email" id="zEmail" placeholder="your@email.com" autocomplete="email"/></div>
+      </div>
+      <div class="zf-row">
+        <div class="zf-group"><label>Preferred Date *</label><input type="date" id="zDate"/></div>
+        <div class="zf-group">
+          <label>Preferred Time (IST)</label>
+          <select id="zTime">
+            <option value="9:00 AM">9:00 AM – 9:30 AM</option>
+            <option value="10:00 AM">10:00 AM – 10:30 AM</option>
+            <option value="11:00 AM">11:00 AM – 11:30 AM</option>
+            <option value="2:00 PM">2:00 PM – 2:30 PM</option>
+            <option value="3:00 PM">3:00 PM – 3:30 PM</option>
+            <option value="4:00 PM">4:00 PM – 4:30 PM</option>
+            <option value="5:00 PM">5:00 PM – 5:30 PM</option>
+          </select>
+        </div>
+      </div>
+      <div class="zf-group"><label>What would you like to discuss?</label><textarea id="zMsg" rows="3" placeholder="Shopify store, WordPress site, performance audit..."></textarea></div>
+      <button class="zoom-submit" id="zoomSubmit" type="button">Confirm Booking →</button>
+      <p class="zoom-note">Your request will be sent to Anchal's email. Zoom link confirmed within 24hrs.</p>
+      <div class="zoom-alt">Or email: <a href="mailto:anchalp4363@gmail.com">anchalp4363@gmail.com</a></div>
+    </div>
+    <div class="zoom-success" id="zoomSuccess" style="display:none;">
+      <div class="zs-check">✅</div>
+      <h3>Request Sent!</h3>
+      <p>Anchal will send a Zoom link to <strong id="zEmailConfirm"></strong> within 24 hours.</p>
+      <button class="zoom-close-btn" id="zoomSuccessClose">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
